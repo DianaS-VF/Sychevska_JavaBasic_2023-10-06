@@ -77,6 +77,7 @@ public class CounterStrike {
         } else {
             System.out.printf("The game finished with the draw. Both teams' score is %.2f! \n", averagePoliceScore);
         }
+        //Changes after initial commit
 
     }
 }
