@@ -2,7 +2,7 @@ package com.gmail.sychevska.homeworks;
 
 import java.util.Random;
 
-public class Rugby_2 {
+public class Rugby_2_ArrayInColumn {
     public static void main(String[] args) {
 
         int numberOfPlayersInTeam = 25;

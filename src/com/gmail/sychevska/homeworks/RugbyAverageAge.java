@@ -2,7 +2,7 @@ package com.gmail.sychevska.homeworks;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Rugby_4_AverageAge {
+public class RugbyAverageAge {
     public static void main(String[] args) {
         int teamSize = 25;
         String firstTeamName = "Chicago Bulls";
