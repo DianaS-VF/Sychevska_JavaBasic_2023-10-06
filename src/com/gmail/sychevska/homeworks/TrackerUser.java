@@ -1,7 +1,7 @@
 package com.gmail.sychevska.homeworks;
 
 public class TrackerUser {
-    static final int CURRENT_YEAR = 2023;
+    private static final int CURRENT_YEAR = 2023;
     private final String name;
     private String lastName;
     private final int dayOfBirth;
