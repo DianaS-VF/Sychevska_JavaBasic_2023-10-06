@@ -1,6 +1,7 @@
 package com.gmail.sychevska.homeworks;
 
 public class TrackerUser {
+    static final int CURRENT_YEAR = 2023;
     private final String name;
     private String lastName;
     private final int dayOfBirth;
@@ -25,8 +26,7 @@ public class TrackerUser {
         this.stepsNumber = stepsNumber;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        int currentYear = 2023;
-        this.age = currentYear - yearOfBirth;
+        this.age = CURRENT_YEAR - yearOfBirth;
     }
 
     public String getName() {
@@ -90,8 +90,6 @@ public class TrackerUser {
     }
 
     public void printAccountInfo() {
-        int currentYear = 2023;
-        int age = currentYear - yearOfBirth;
         System.out.println("\nFirst Name: " + name);
         System.out.println("Last Name: " + lastName);
         System.out.println("Date of Birth: " + dayOfBirth + "/" + monthOfBirth + "/" + yearOfBirth);
@@ -101,7 +99,5 @@ public class TrackerUser {
         System.out.println("Phone number: " + phoneNumber);
         System.out.println("Email: " + email);
         System.out.println("Age: " + age + " years");
-
-
     }
 }
