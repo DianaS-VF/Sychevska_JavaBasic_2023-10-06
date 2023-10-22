@@ -1,16 +1,17 @@
 package com.gmail.sychevska.homeworks;
 
 public class TrackerUser {
-    final String name;
+    private final String name;
     private String lastName;
-    final int dayOfBirth;
-    final int monthOfBirth;
-    final int yearOfBirth;
+    private final int dayOfBirth;
+    private final int monthOfBirth;
+    private final int yearOfBirth;
     private double weight;
     private String bloodPressure;
     private int stepsNumber;
-    final String email;
-    final String phoneNumber;
+    private final String email;
+    private final String phoneNumber;
+    private final int age;
 
 
     public TrackerUser(String name, String lastName, int dayOfBirth, int monthOfBirth, int yearOfBirth, double weight, String bloodPressure, int stepsNumber, String email, String phoneNumber) {
@@ -24,10 +25,16 @@ public class TrackerUser {
         this.stepsNumber = stepsNumber;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        int currentYear = 2023;
+        this.age = currentYear - yearOfBirth;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public int getDayOfBirth() {
@@ -42,12 +49,28 @@ public class TrackerUser {
         return yearOfBirth;
     }
 
+    public double getWeight() {
+        return weight;
+    }
+
+    public String getBloodPressure() {
+        return bloodPressure;
+    }
+
+    public int getStepsNumber() {
+        return stepsNumber;
+    }
+
     public String getEmail() {
         return email;
     }
 
     public String getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public void setLastName(String lastName) {
