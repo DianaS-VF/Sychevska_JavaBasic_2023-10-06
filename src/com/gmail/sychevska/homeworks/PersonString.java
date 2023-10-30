@@ -7,7 +7,6 @@ public class PersonString {
     String phoneNumber;
 
     public String printInfo(String firstName, String lastName, String city, String phoneNumber) {
-        String result = "You can call Mr " + firstName + " " + lastName + " from " + city + " by number " + phoneNumber + ".";
-        return result;
+        return "You can call Mr " + firstName + " " + lastName + " from " + city + " by number " + phoneNumber + ".";
     }
 }

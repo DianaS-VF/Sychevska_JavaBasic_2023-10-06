@@ -38,6 +38,9 @@ public class SteppedArray {
 
         printMatrix(matrix);
 
+//        System.out.println("\nMinimums: ");
+//        mimimums(matrix);
+
         System.out.println("\nMatrix with all rows sorted (ascending): ");
         for (int[] rows : matrix) sortAscending(rows);
         printMatrix(matrix);
@@ -66,9 +69,7 @@ public class SteppedArray {
 
     private static void printMinimumInRows(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j == 0; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
+            System.out.print(matrix[i][0] + " ");
         }
     }
 
@@ -137,4 +138,14 @@ public class SteppedArray {
         }
         return sum;
     }
+
+//    public static void mimimums(int[][] matrix) {
+//        for (int i = 0; i < matrix.length; i++) {
+//            if ((i + 1) % 2 == 0) {
+//                System.out.print(matrix[i][matrix.length-1] + " ");
+//            } else {
+//                System.out.print(matrix[i][0] + " ");
+//            }
+//        }
+//    }
 }
